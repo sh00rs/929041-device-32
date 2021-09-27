@@ -5,8 +5,195 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-header">
+        <img class="logo" src="" alt="Логотип магазина Девайс">
+      <nav class="main-menu">
+        <ul class="main-menu-list">
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Войти</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">
+              <span class="visually-hidden">
+                Выйти
+              </span> 
+            </a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Сравнить</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="catalog">
+        <ul class="navigation-list">          
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="warranty.html">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">Контакты</a>
+          </li>
+        </ul> 
+      </nav>
+    </header>
+  <main class="main-index">
+    <div class="slider">
+      <ol class="slider-list">
+        <li class="slider-list">
+          <button class="slider-button-prev" id="slider-prev"></button>
+          <img class="slider-image" src="img-slider1.jpg" alt="Квадрик 1">
+          <button class="slider-button-next" id="slider-next"></button>
+          <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
+          <p class="slider-content">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="slider-link" href="#">Подробнее</a>
+          <dl class="slider-prop-list">
+            <dt class="slider-prop-dt">
+              Дальность полета
+            </dt>
+            <dd class="slider-prop-dd">
+              800 м
+            </dd>
+            <dt class="slider-prop-dt">
+              Радиус поражения
+            </dt>
+            <dd class="slider-prop-dd">
+              50 м
+            </dd>
+          </dl>
+        </li>
+        <li class="slider-list">
+          <button class="slider-button-prev" id="slider-prev"></button>
+          <img class="slider-image" src="img-slider2.jpg" alt="Квадрик 2">
+          <button class="slider-button-next" id="slider-next"></button>
+          <h2 class="slider-title">Худеем правильно!</h2>
+          <p class="slider-content">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="slider-link" href="#">Подробнее</a>
+          <dl class="slider-prop-list">
+            <dt class="slider-prop-dt">
+              Дальность полета
+            </dt>
+            <dd class="slider-prop-dd">
+              800 м
+            </dd>
+          </dl>
+        </li>
+        <li class="slider-list">
+          <button class="slider-button-prev" id="slider-prev"></button>
+          <img class="slider-image" src="img-slider3.jpg" alt="Квадрик 3">
+          <button class="slider-button-next" id="slider-next"></button>
+          <h2 class="slider-title">Делай селфи, как Бен Стиллер! </h2>
+          <p class="slider-content">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+          <a class="slider-link" href="#">Подробнее</a>
+          <dl class="slider-prop-list">
+            <dt class="slider-prop-dt">
+              Длина палки
+            </dt>
+            <dd class="slider-prop-dd">
+              8,5 м
+            </dd>
+            <dt class="slider-prop-dt">
+              Вес палки
+            </dt>
+            <dd class="slider-prop-dd">
+              5 кг
+            </dd>
+            <dt class="slider-prop-dt">
+              Материал
+            </dt>
+            <dd class="slider-prop-dd">
+              Карбон
+            </dd>
+          </dl>
+        </li>
+      </ol>
+    </div>
+   <h1 class="visually-hidden" >Интернет-магазин Девайс</h1> 
+   <nav class="categories">
+    <ol class="categories-list">
+      <li class="categories-item">
+        <a class="categories-link" href="#">Виртуальная реальность</a>
+      </li>
+      <li class="categories-item">
+        <a class="categories-link" href="#">Моноподы для селфи</a>
+      </li>
+      <li class="categories-item">
+        <a class="categories-link" href="#">Экшн-камеры</a>
+      </li>
+      <li class="categories-item">
+        <a class="categories-link" href="#">Фитнес-браслеты</a>
+      </li>
+      <li class="categories-item">  
+        <a class="categories-link" href="#">Умные часы</a>
+      </li>
+      <li class="categories-item">
+        <a class="categories-link" href="#">Квадрокоптеры</a>
+      </li>
+    </ol>
+  </nav>
+  <nav class="service">
+    <ul class="service-list">
+      <li class="service-item">
+        <a class="service-link" href="#">Доставка</a>
+      </li>
+      <li class="service-item">
+        <a class="service-link" href="#">Гарантия</a>
+      </li>
+      <li class="service-item">
+        <a class="service-link" href="#">Кредит</a>
+      </li>
+    </ul>
+  </nav>
+  <section class="about">
+    <ul class="about-list">
+      <li class="about-item">
+        <h3 class="about-title">О нас</h3>
+        <p class="about-content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-content">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <ul class="about-list-transport-list">
+          <li class="about-list-transport-item">
+            Меловые линии
+          </li>
+          <li class="about-list-transport-item">
+            СДИК
+          </li>
+          <li class="about-list-transport-item">
+            ТоксБерри
+          </li>  
+        </ul>
+        <a class="about-link" href="about.html">Подробнее о нас</a>
+      </li>
+      <li class="about-item">
+        <h3 class="about-title">Контакты</h3>
+        <p class="about-content">
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. 
+        </p>
+        <h4 class="about-title">Интернет-магазин <q>Девайс</q> </h4>
+        <p class="about-content">
+          <address class="about-content">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </address>
+        </p>
+        <h4 class="about-title">Время работы</h4>
+        <p class="about-content">
+          пн—пт: с 10:00 до 22:00 <br>
+          сб—вс: с 10:00 до 19:00
+        </p>
+        <a class="about-link" href="about.html">Напишите нам</a>
+      </li>
+    </ul>
+  </section> 
+  </main>  
+    
   </body>
 </html>
