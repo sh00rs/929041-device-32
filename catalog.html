@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Девайс: Каталог товаров</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -25,7 +26,7 @@
             <a class="main-menu-link" href="#">Коля Петухов</a>
           </li>
           <li class="main-menu-item">
-            <a class="main-menu-link" href="#">Выйти</a>
+            <a class="main-menu-link logout" href="#">Выйти</a>
           </li>
           <li class="main-menu-item">
             <a class="main-menu-link" href="#">Сравнить</a>
@@ -37,16 +38,16 @@
       </nav>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+          <a class="navigation-link button" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="delivery.html">Доставка</a>
+          <a class="navigation-link button" href="delivery.html">Доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="warranty.html">Гарантия</a>
+          <a class="navigation-link button" href="warranty.html">Гарантия</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="about.html">Контакты</a>
+          <a class="navigation-link button" href="about.html">Контакты</a>
         </li>
       </ul>
     </header>
@@ -61,16 +62,16 @@
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
+            <a class="breadcrumbs-link"  href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </header>
       <section class="catalog-products">
         <h2 class="catalog-filter-title">Фильтр:</h2>
-        <!--Форма фильтра товаров-->
+        <!-- Форма фильтра товаров -->
         <form action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость</legend>
+            <legend class="catalog-filter-feature">Стоимость</legend>
             <button class="range-toggle toggle-min">
               <span class="visually-hidden">Изменить минимальную цену.</span>
             </button>
@@ -85,7 +86,7 @@
             </label>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цвет</legend>
+            <legend class="catalog-filter-feature">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -125,7 +126,7 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
+            <legend class="catalog-filter-feature">Bluetooth</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -145,9 +146,11 @@
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
-        <!--Порядок сортировки-->
+        <!-- Порядок сортировки -->
         <form class="sorting-type" action="https://echo.htmlacademy.ru" method="GET">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
+          <h2 class="catalog-filter-title">
+            <label for="sorting">Сортировка:</label>
+          </h2>
           <select class="select-control" name="sorting" id="sorting">
             <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешёвые</option>
@@ -162,47 +165,47 @@
           <span class="visually-hidden">Отсортировать по убыванию.</span>
         </a>
 
-        <!--Карточки товаров-->
+        <!-- Карточки товаров -->
 
         <ul class="product-list">
           <li class="product-card product-current">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="img/product-1.jpg" alt="Любительская селфи-палка.">
+              <img class="product-card-image" width="360" height="380" src="img/product-1.jpg" alt="Любительская селфи-палка.">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
+              <span class="product-card-price">500 ₽</span>
             </a>
-            <b class="product-card-price">500 ₽ </b>
             <a class="product-card-button button" href="#">Подробнее</a>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="img/product-2.jpg" alt="Профессиональная селфи-палка.">
+              <img class="product-card-image" width="360" height="380" src="img/product-2.jpg" alt="Профессиональная селфи-палка.">
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+              <span class="product-card-price">1 500 ₽</span>
             </a>
-            <b class="product-card-price">1500 ₽ </b>
             <a class="product-card-button button" href="#">Подробнее</a>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="img/product-3.jpg" alt="Непотопляемая селфи-палка.">
+              <img class="product-card-image" width="360" height="380" src="img/product-3.jpg" alt="Непотопляемая селфи-палка.">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+              <span class="product-card-price">2 500 ₽ </span>
             </a>
-            <b class="product-card-price">2500 ₽ </b>
             <a class="product-card-button button" href="#">Подробнее</a>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="img/product-4.jpg" alt="">
+              <img class="product-card-image" width="360" height="380" src="img/product-4.jpg" alt="">
               <h3 class="product-card-title">Селфи палка следуй за мной</h3>
+              <span class="product-card-price">4 900 ₽</span>
             </a>
-            <b class="product-card-price">4900 ₽ </b>
             <a class="product-card-button button" href="#">Подробнее</a>
           </li>
         </ul>
-        <!--Пагинация-->
+        <!-- Пагинация -->
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link button"  href="#">Назад</a>
+            <a class="pagination-link"  href="#">Назад</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">1</a>
@@ -220,7 +223,7 @@
             <a class="pagination-link" href="#">15</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link button"  href="#">Вперёд</a>
+            <a class="pagination-link"  href="#">Вперёд</a>
           </li>
         </ul>
       </section>
@@ -237,13 +240,13 @@
         </address>
         <ul class="footer-contacts-list">
           <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="#">Доставка</a>
+            <a class="footer-contacts-link button" href="#">Доставка</a>
           </li>
           <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="#">Гарантия</a>
+            <a class="footer-contacts-link button" href="#">Гарантия</a>
           </li>
           <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="#">Контакты</a>
+            <a class="footer-contacts-link button" href="#">Контакты</a>
           </li>
         </ul>
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>

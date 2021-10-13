@@ -22,7 +22,7 @@
             <a class="main-menu-link" href="#">Войти</a>
           </li>
           <li class="main-menu-item">
-            <a class="main-menu-link" href="#">Выйти</a>
+            <a class="main-menu-link logout" href="#">Выйти</a>
           </li>
           <li class="main-menu-item">
             <a class="main-menu-link" href="#">Сравнить</a>
@@ -33,16 +33,16 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link button" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="delivery.html">Доставка</a>
+            <a class="navigation-link button" href="delivery.html">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="warranty.html">Гарантия</a>
+            <a class="navigation-link button" href="warranty.html">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">Контакты</a>
+            <a class="navigation-link button" href="about.html">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -64,7 +64,7 @@
           </h3>
           <img class="slide-image" src="img/slide-1.jpg" width="560" height="560" alt="Квадрокоптер.">
           <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="slide-link" href="#">Подробнее</a>
+          <a class="slide-link button" href="#">Подробнее</a>
           <dl class="slide-prop-list">
             <dt class="slide-prop-dt">Дальность полета</dt>
             <dd class="slide-prop-dd">800 м</dd>
@@ -81,7 +81,7 @@
           </h3>
           <img class="slide-image" src="img/slide-2.jpg" width="560" height="560" alt="Фитнес-браслет. На экране надпись: я вижу, что ты снова ешь!">
           <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="slide-link" href="#">Подробнее</a>
+          <a class="slide-link button" href="#">Подробнее</a>
           <dl class="slide-prop-list">
             <dt class="slide-prop-dt">Без подзарядки</dt>
             <dd class="slide-prop-dd">48 часов</dd>
@@ -96,7 +96,7 @@
           </h3>
           <img class="slide-image" src="img/slide-3.jpg" width="560" height="560" alt="Селфи-палки.">
           <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-          <a class="slide-link" href="#">Подробнее</a>
+          <a class="slide-link button" href="#">Подробнее</a>
           <dl class="slide-prop-list">
             <dt class="slide-prop-dt">Длина палки</dt>
             <dd class="slide-prop-dd">8,5 м</dd>
@@ -176,7 +176,7 @@
         <h2 class="visually-hidden">Сервис.</h2>
         <ul class="service-list">
           <li class="service-item">
-            <a class="service-link service-current" href="#">Доставка</a>
+            <a class="service-link button service-current" href="#">Доставка</a>
             <div class="service-tab">
               <h3 class="service-tab-title">Доставка</h3>
               <p class="service-tab-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -184,16 +184,16 @@
             </div>
           </li>
           <li class="service-item">
-            <a class="service-link" href="#">Гарантия</a>
-            <div class="service-tab visually-hidden">
+            <a class="service-link button" href="#">Гарантия</a>
+            <div class="service-tab">
               <h3 class="service-tab-title">Гарантия</h3>
               <p class="service-tab-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               <img src="img/warranty-1.svg" width="171" height="195" alt="Логотип: позвони и мы всё пофиксим.">
             </div>
           </li>
           <li class="service-item">
-            <a class="service-link" href="#">Кредит</a>
-            <div class="service-tab visually-hidden">
+            <a class="service-link button" href="#">Кредит</a>
+            <div class="service-tab">
               <h3 class="service-tab-title">Кредит</h3>
               <p class="service-tab-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
               <img src="img/credit-1.svg" width="156" height="188" alt="Логотип: человек тащит кредитку.">
@@ -203,10 +203,10 @@
       </section>
       <!-- Блок про доставку -->
       <div class="delivery-block">
-        <button class="delivery-block-button" type="button">
+        <button class="delivery-block-button button" type="button">
           <img src="img/delivery.svg" width="47" height="31" alt="Логотип информация.">
         </button>
-        <a class="delivery-block-link" href="#">Доставим редкий товар под заказ</a>
+        <a class="delivery-block-link button" href="#">Доставим редкий товар под заказ</a>
       </div>
       <!-- Блок о магазине -->
       <section class="about">
@@ -218,7 +218,7 @@
           <li class="delivery-item">СДЭК</li>
           <li class="delivery-item">ТоксБерри</li>
         </ul>
-        <a class="about-link" href="#">Подробнее о нас</a>
+        <a class="about-link button" href="#">Подробнее о нас</a>
       </section>
       <!-- Контакты -->
       <section class="contacts">
@@ -234,14 +234,14 @@
           <li class="contacts-shedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-shedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="about-link" href="#">Напишите нам</a>
+        <a class="about-link button" href="#">Напишите нам</a>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="GET">
           <p class="subscribe-form-email">
-            <label for="email">E-mail</label>
+            <label class="visually-hidden" for="email">E-mail</label>
             <input class="subscribe-textarea" type="email" id="email" name="email" placeholder="Ваш e-mail">
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </p>
@@ -261,16 +261,16 @@
         </address>
         <ul class="footer-contacts-list">
           <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="#">Доставка</a>
+            <a class="footer-contacts-link button" href="#">Доставка</a>
           </li>
           <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="#">Гарантия</a>
+            <a class="footer-contacts-link button" href="#">Гарантия</a>
           </li>
           <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="#">Контакты</a>
+            <a class="footer-contacts-link button" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </section>
       <section class="page-footer-socials">
         <h2 class="visually-hidden">Ссылки на социальные сети и партнёров</h2>
