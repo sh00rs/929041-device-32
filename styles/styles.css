@@ -1,84 +1,83 @@
 @font-face {
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  font-family: "Rubik";
-
-  font-display: swap;
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  font-family: "Rubik";
-
-  font-display: swap;
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-  font-style: normal;
-  font-weight: 800;
   font-family: "Rubik";
-
-  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
   src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  font-family: "Raleway";
-
-  font-display: swap;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Rubik", sans-serif;
-  color: #444444;
-
-  background-color: #ffffff;
+  color: #444;
+  background-color: #fff;
 }
 
-.title {
-  font-weight: 800;
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  font-family: "Raleway", sans-serif;
-  color: #000000;
+  font-weight: 800;
+  color: #000;
 }
 
-.about.title {
+h3 {
+  color: #000;
+}
+
+h3.about-title {
   font: inherit;
-  font-weight: 700;
   font-size: 24px;
-  color: #444444;
+  font-weight: 700;
+  color: #444;
 }
 
-*:any-link {
-  color: #000000;
-
+a {
   text-decoration-line: none;
+  color: #000;
 }
 
 .button {
-  font-style: normal;
-  font-weight: 800;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
+  font-weight: 800;
+  font-style: normal;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.2em;
 }
 
 .page-header {
-  background-color: #ffe17f;
+  background-color: #FFE17F;
 }
 
 .search-input {
@@ -109,23 +108,21 @@ body {
 }
 
 .slide-number {
-  font-weight: 800;
+  font-family: "Rubik", sans-serif;
   font-size: 180px;
+  font-weight: 800;
   line-height: 30px;
-  font-family: inherit;
   text-align: right;
-  color: #ffffff;
-  /* Выделяю номер слайда */
-
-  background-color: #880303;
+  color: #fff;
+  background-color: brown;
 }
 
 .slide-content h3,
 .service-tab-title {
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
   font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
 }
 
 .slide-prop-dd {
@@ -137,27 +134,28 @@ body {
 }
 
 .categories-link {
-  font-weight: 800;
   line-height: 24px;
-  text-transform: none;
   letter-spacing: -0.02em;
+  font-weight: 800;
 }
 
 .service-link {
+  background-color: #FFC700;
   font-weight: 800;
   line-height: 21px;
+}
 
-  background-color: #8a8987;
+.categories-link {
+  text-transform: none;
 }
 
 .categories-item {
   display: inline-block;
-
   vertical-align: top;
 }
 
 .categories-item img {
-  background-color: #ffe17f;
+  background-color: #FFE17F;
 }
 
 .service-item {
@@ -177,13 +175,13 @@ body {
 }
 
 .delivery-block-button {
-  background-color: #ffe17f;
+  background-color: #FFE17F;
 }
 
 .delivery-list {
+  color: #000;
   font-weight: 700;
   line-height: 20px;
-  color: #000000;
 }
 
 .about-address-text {
@@ -191,12 +189,11 @@ body {
 }
 
 .contacts-phone {
-  font-style: normal;
-  font-weight: 400;
   font-family: "Rubik", sans-serif;
-  color: #444444;
-
+  font-weight: 400;
+  font-style: normal;
   text-decoration-line: underline;
+  color: #444;
 }
 
 .subscribe {
@@ -205,42 +202,33 @@ body {
 
 .subscribe-textarea {
   font: inherit;
-  color: #444444;
-
   opacity: 0.5;
+  color: #444;
 }
 
-.page-footer {
-  font: inherit;
-  font-style: normal;
-  font-weight: 400;
-  color: #ffffff;
-
-  background-color: #444444;
+footer {
+  background-color: #444;
 }
 
-.page-footer h2,
-.page-footer h3 {
+footer p,
+footer a,
+footer h2,
+footer h3 {
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
 }
 
-.page-footer p {
-  font-style: normal;
+footer p,
+footer a {
   font-size: 16px;
   line-height: 19px;
 }
 
-.page-footer a {
-  color: inherit;
-}
-
-.footer-contacts-phone {
-  font: inherit;
-  font-size: 16px;
-}
-
-.breadcrumbs {
+.breadcrumbs-link {
   font: inherit;
   font-size: 16px;
   line-height: 19px;
@@ -248,28 +236,30 @@ body {
   text-transform: none;
 }
 
-.breadcrumbs-link {
-  color: inherit;
+h2.catalog-filter-title {
+  background-color: #DCDCDC;
 }
 
-.catalog-filter.title {
-  font-weight: 800;
+.catalog-filter-title {
   font-size: 16px;
   line-height: 19px;
-  text-transform: uppercase;
+  font-weight: 800;
   letter-spacing: 0.2em;
-
-  background-color: #dcdcdc;
+  text-transform: uppercase;
 }
 
 .catalog-filter-group {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400 ;
+  font-style: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #000000;
+  color: #000;
 }
 
 .catalog-filter-feature {
   font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
 }
@@ -278,16 +268,15 @@ body {
   font-size: 15px;
   line-height: 18px;
   text-align: center;
-
   opacity: 0.3;
 }
 
 .select-control {
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .catalog-products form {
@@ -295,56 +284,52 @@ body {
 }
 
 .product-card {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
   font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.product-card.title {
-  font: inherit;
-  font-weight: 700;
+.product-card-title {
+  font-size: inherit;
   line-height: 24px;
   letter-spacing: -0.02em;
 }
 
 .product-card-price {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #444;
   line-height: 21px;
   text-align: right;
-  color: #444444;
 }
 
 .pagination-show-more {
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-
-  background-color: #ffffff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
 }
 
 .pagination-item {
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  text-transform: uppercase;
+  font-weight: 800;
   letter-spacing: 0.2em;
-
   background-color: #ebebeb;
+  text-transform: uppercase;
+  color: #444;
   opacity: 0.3;
-}
-
-.pagination-item a {
-  color: inherit;
-
-  opacity: inherit;
 }
 
 .pagination-item:first-child,
 .pagination-item:last-child {
-  font-weight: 800;
-  font-family: "Raleway", sans-serif;
-  color: #000000;
-
-  background-color: transparent;
+  color: #000;
   opacity: unset;
 }
