@@ -59,14 +59,18 @@ body {
   margin: 0 auto;
 }
 
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
 .logo {
   margin-left: 60px;
 }
 
 .main-container {
   flex-grow: 1;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .search-form {
@@ -78,8 +82,7 @@ body {
 .main-menu {
   display: flex;
   flex-direction: column;
-  width: 1160px;
-  margin: 0 auto;
+  padding: 0 60px;
 
   background-color: #ffe17f;
 }
@@ -87,8 +90,6 @@ body {
 .main-menu-container {
   display: flex;
   justify-content: flex-start;
-  width: 1040px;
-  margin: 0 auto;
 }
 
 .main-menu-list {
@@ -106,8 +107,6 @@ body {
 
 .navigation-list {
   display: flex;
-  width: 1040px;
-  margin: 0 auto;
   padding: 0;
 }
 
@@ -150,6 +149,8 @@ body {
 
 .categories-item {
   width: 160px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .categories-list {
@@ -166,9 +167,6 @@ body {
 .service-item {
   display: flex;
   justify-content: flex-start;
-  width: 1160px;
-  margin: 0;
-  padding: 0;
 
   background-color: #f0f0f0;
 }
@@ -199,15 +197,9 @@ body {
 
 .about-container {
   display: flex;
-  max-width: 1160px;
-}
-
-.about {
-  width: 560px;
 }
 
 .contacts {
-  width: 560px;
   margin-left: 40px;
 }
 
@@ -221,7 +213,7 @@ body {
   color: #000000;
 }
 
-h3.about.title {
+.about-title {
   font: inherit;
   font-weight: 700;
   font-size: 24px;
@@ -327,12 +319,6 @@ h3.about.title {
   background-color: #8a8987;
 }
 
-.categories-item {
-  display: inline-block;
-
-  vertical-align: top;
-}
-
 .categories-item img {
   background-color: #ffe17f;
 }
@@ -410,8 +396,6 @@ h3.about.title {
 .page-footer-container {
   display: flex;
   justify-content: flex-start;
-  max-width: 1160px;
-  margin: 0 auto;
 }
 
 .device-block {
@@ -448,27 +432,30 @@ h3.about.title {
   width: 100%;
 }
 
-.inner-header {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .catalog-products {
   display: grid;
-  width: 100%;
+  width: 1160px;
   margin: 0 auto;
 
-  grid-template-columns: 315fr 685fr;
+  grid-template-columns: 328px 1fr;
+  grid-template-areas: "filter-title-box sorting-box"
+                       "filter-box products-list"
+                       "filter-box pagination-show-more"
+                       "filter-box pagination";
 }
 
 .filter-title-box {
   width: 100%;
+  margin-left: auto;
+  grid-area: filter-title-box;
 
   background-color: #dcdcdc;
 }
 
 .filter-box {
   width: 100%;
+  margin-left: auto;
+  grid-area: filter-box;
 
   background-color: #ebebeb;
 }
@@ -485,33 +472,24 @@ h3.about.title {
   letter-spacing: 0.2em;
 }
 
-
 .filter-container {
   display: flex;
   flex-direction: column;
-  width: 328px;
+  width: 200px;
   margin-left: auto;
-}
-
-.products-box {
-  width: 100%;
-
-  background-color: #ffffff;
-}
-
-.products-container {
-  display: flex;
-  flex-direction: column;
-  width: 832px;
-  margin-right: auto;
+  margin-right: 70px;
 }
 
 .products-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  grid-area: products-list;
+  width: 100%;
   margin: 0;
+  margin-right: auto;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .filter-container form {
@@ -523,6 +501,8 @@ h3.about.title {
 
 .sorting-box {
   width: 100%;
+  margin-right: auto;
+  grid-area: sorting-box;
 
   background-color: #ebebeb;
 }
@@ -669,6 +649,7 @@ h3.about.title {
 .pagination-show-more {
   width: 760px;
   margin-left: auto;
+  grid-area: pagination-show-more;
 
   font-weight: 800;
   font-size: 16px;
@@ -681,6 +662,7 @@ h3.about.title {
 .pagination {
   display: flex;
   justify-content: space-between;
+  grid-area: pagination;
   width: 760px;
   margin: 0;
   margin-left: auto;
