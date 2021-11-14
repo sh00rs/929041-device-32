@@ -13,7 +13,7 @@
         <img class="logo" src="img/device-logo.svg" alt="Логотип магазина Девайс">
       </a>
       <!-- Главное меню -->
-      <nav class="main-menu">
+      <nav class="main-menu main-menu-inner-height">
         <div class="main-menu-container">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
             <label class="search-label">
@@ -73,7 +73,9 @@
         <div class="right-header"></div>
         <div class="left-side"></div>
         <div class="right-side"></div>
-        <h2 class="catalog-filter title">Фильтр:</h2>
+        <span class="catalog-filter-block">
+          <h2 class="catalog-filter title">Фильтр:</h2>
+        </span>
         <form class="filter-container" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-feature">Стоимость</legend>
@@ -162,10 +164,10 @@
           </select>
           <button class="visually-hidden">Отсортировать товары.</button>
           <a class="button button-light" href="#">
-            <span class="visually-hidden" hidden>Отсортировать по возрастанию.</span>
+            <span class="visually-hidden">Отсортировать по возрастанию.</span>
           </a>
           <a class="button" href="#">
-            <span class="visually-hidden" hidden>Отсортировать по убыванию.</span>
+            <span class="visually-hidden">Отсортировать по убыванию.</span>
           </a>
         </form>
         <div class="products-box">
